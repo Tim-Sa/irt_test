@@ -1,14 +1,10 @@
 import numpy as np
 import pandas as pd
 
-try:
-    from .utils import df_consist_only_of
-except ImportError:
-    from utils import df_consist_only_of
 
 
 class IrtResult:
-    """Contain logits of tasks and subjects from IRT 0 model.
+    """Contain logits of tasks and subjects from IRT0 model.
        Also contain error and rejected units. 
        Rejected units (subjects or tasks) - units wich cannot be used to 
        calculate logits.
@@ -32,6 +28,7 @@ class IrtResult:
         self.err = err
         self.rejected_tasks = rejected_tasks
         self.rejected_subjects = rejected_subjects
+
 
 
 def prepare(df: pd.DataFrame) -> (pd.DataFrame, list, list):
@@ -130,8 +127,8 @@ def irt(df: pd.DataFrame, steps: int = 0, accept: float = 0.02) -> IrtResult:
                                     model error.
     '''
 
-    if not df_consist_only_of(df, set([0, 1])):
-        raise ValueError
+    if not _df_consist_only_of(df, set([0, 1])):
+        raise ValueError("Input data can contain only ones and zeros.")
     
     # Remove zeros and ones Series from input data.
     df, rejected_subjects, rejected_tasks = prepare(df)
@@ -286,3 +283,9 @@ def logits_difference(prev_matrix: np.array, ev: np.array) -> (float, float):
     diff_diff = -1 * np.sum(difference, axis=0)
 
     return ability_diff, diff_diff
+
+
+def _df_consist_only_of(df: pd.DataFrame, values: set) -> bool:
+    df_values = df.stack().tolist()
+    diff = set(df_values).difference(values)
+    return len(diff) == 0
