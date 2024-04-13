@@ -14,7 +14,7 @@ pip install irt-test
 
 **🔥 Note:** The Rasch model works only with binary data, also no column or row should contain a single value, for example, a row of zeros or ones will be excluded from the analysis.
 
-Input DataFrame example:
+###Input DataFrame example:
 |       |   Task 1 |   Task 2 |   Task 3 |   Task 4 |   Task 5 |
 |:------|---------:|---------:|---------:|---------:|---------:|
 | Julia |        1 |        0 |        1 |        1 |        1 |
@@ -22,7 +22,7 @@ Input DataFrame example:
 | Anna  |        1 |        0 |        0 |        0 |        1 |
 | Peter |        0 |        0 |        0 |        1 |        1 |
 
-For get logits of tasks and subjects use 'irt' function.
+###For get logits of tasks and subjects use 'irt' function.
 
 This function calculates scores for the subjects' abilities and tasks' difficulty in the form of logits using the IRT model.
 
