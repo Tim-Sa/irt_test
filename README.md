@@ -75,8 +75,8 @@ irt_result.rejected_subjects
 ```
 ['Jimmy']
 ```python
-# Can't get logits for these subjects
-irt_result.rejected_subjects
+# Can't get logits for these tasks
+irt_result.rejected_tasks
 ```
 ['Task 11']
 
