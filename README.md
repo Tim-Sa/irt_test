@@ -37,17 +37,19 @@ irt_result.rejected_subjects
 # Can't get logits for these tasks
 irt_result.rejected_tasks
 ```
-##### irt_result.abilities (pd.Series)
-Julia      4.720945
-Ivan       3.290194
-Anna       1.978364
-Peter      1.978364
-Helen      1.978364
-Bill       0.711974
-Tony      -0.451242
-Dmitry    -2.236696
-Natasha   -3.034704
-dtype: float64
+##### irt_result.abilities
+|         |         0 |
+|:--------|----------:|
+| Julia   |  4.72094  |
+| Ivan    |  3.29019  |
+| Anna    |  1.97836  |
+| Peter   |  1.97836  |
+| Helen   |  1.97836  |
+| Bill    |  0.711974 |
+| Tony    | -0.451242 |
+| Dmitry  | -2.2367   |
+| Natasha | -3.0347   |
+
 
 ##### irt_result.difficult (pd.Series)
 Task 1    -2.847789
