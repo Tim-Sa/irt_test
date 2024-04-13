@@ -6,6 +6,7 @@ You can install irt_test using pip:
 
 ```bash
 pip install irt-test
+```
 
 ### Example Usage
 
@@ -35,3 +36,4 @@ irt_result.rejected_subjects
 
 # Can't get logits for these tasks
 irt_result.rejected_tasks
+```
