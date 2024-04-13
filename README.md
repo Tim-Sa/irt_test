@@ -28,7 +28,7 @@ irt_result.abilities
 # Difficult of test tasks
 irt_result.difficult
 
-# "IRT model error:"
+# "IRT model error
 irt_result.err
 
 # Can't get logits for these subjects
