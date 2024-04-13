@@ -49,8 +49,6 @@ irt_result.rejected_tasks
 | Tony    | -0.451242 |
 | Dmitry  | -2.2367   |
 | Natasha | -3.0347   |
-
-
 ##### irt_result.difficult (pd.Series)
 |         |         0 |
 |:--------|----------:|
@@ -64,14 +62,11 @@ irt_result.rejected_tasks
 | Task 8  |  1.59305  |
 | Task 9  |  4.50918  |
 | Task 10 |  4.50918  |
-
 ##### irt_result.err (float)
 0.0196
-
 ##### irt_result.rejected_subjects (list[str])
 ['Jimmy']
-
 ##### irt_result.rejected_tasks (list[str])
- ['Task 11']
+['Task 11']
 
 
