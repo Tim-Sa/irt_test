@@ -52,7 +52,7 @@ irt_result.difficult
 # "IRT model error
 irt_result.err
 ```
-0.0196
+0.01212
 ```python
 # Can't get logits for these subjects
 irt_result.rejected_subjects
