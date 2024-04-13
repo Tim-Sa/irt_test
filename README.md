@@ -37,7 +37,7 @@ irt_result.rejected_subjects
 # Can't get logits for these tasks
 irt_result.rejected_tasks
 ```
-# irt_result.abilities (pd.Series)
+##### irt_result.abilities (pd.Series)
 Julia      4.720945
 Ivan       3.290194
 Anna       1.978364
@@ -49,7 +49,7 @@ Dmitry    -2.236696
 Natasha   -3.034704
 dtype: float64
 
-# irt_result.difficult (pd.Series)
+##### irt_result.difficult (pd.Series)
 Task 1    -2.847789
 Task 2    -2.847789
 Task 3    -2.847789
@@ -62,13 +62,13 @@ Task 9     4.509178
 Task 10    4.509178
 dtype: float64
 
-# irt_result.err (float)
+##### irt_result.err (float)
 0.0196
 
-# irt_result.rejected_subjects (list[str])
+##### irt_result.rejected_subjects (list[str])
 ['Jimmy']
 
-# irt_result.rejected_tasks (list[str])
+##### irt_result.rejected_tasks (list[str])
  ['Task 11']
 
 
