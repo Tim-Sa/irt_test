@@ -37,7 +37,7 @@ irt_result.rejected_subjects
 # Can't get logits for these tasks
 irt_result.rejected_tasks
 ```
-##### irt_result.abilities
+##### irt_result.abilities (pd.Series)
 |         |         0 |
 |:--------|----------:|
 | Julia   |  4.72094  |
@@ -52,17 +52,18 @@ irt_result.rejected_tasks
 
 
 ##### irt_result.difficult (pd.Series)
-Task 1    -2.847789
-Task 2    -2.847789
-Task 3    -2.847789
-Task 4    -2.847789
-Task 5    -1.404599
-Task 6    -0.212051
-Task 7     2.396402
-Task 8     1.593047
-Task 9     4.509178
-Task 10    4.509178
-dtype: float64
+|         |         0 |
+|:--------|----------:|
+| Task 1  | -2.84779  |
+| Task 2  | -2.84779  |
+| Task 3  | -2.84779  |
+| Task 4  | -2.84779  |
+| Task 5  | -1.4046   |
+| Task 6  | -0.212051 |
+| Task 7  |  2.3964   |
+| Task 8  |  1.59305  |
+| Task 9  |  4.50918  |
+| Task 10 |  4.50918  |
 
 ##### irt_result.err (float)
 0.0196
