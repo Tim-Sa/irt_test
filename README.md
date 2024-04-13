@@ -17,7 +17,17 @@ Input DataFrame example:
 | Anna  |        1 |        0 |        0 |        0 |        1 |
 | Peter |        0 |        0 |        0 |        1 |        1 |
 
-For get logits of tasks and subjects use 'irt' function:
+For get logits of tasks and subjects use 'irt' function.
+
+This function calculates scores for the subjects' abilities and tasks' difficulty in the form of logits using the IRT model.
+
+**Parameters:**
+- `df` (DataFrame): A matrix with only zeros and ones values.
+- `steps` (int): Number of learning steps (if 0, the model will run until the error > accept).
+- `accept` (float): Acceptable error value (ignored when steps > 0).
+
+**Returns:**
+- `result` (IrtResult): An object containing logit vectors, rejected subjects and tasks, and model error.
 
 ```python
 from irt_test.irt import irt
