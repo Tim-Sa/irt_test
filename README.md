@@ -40,6 +40,14 @@ from irt_test.irt import irt
 # Get logits and additional info from IRT0 model
 irt_result = irt(df)
 ```
+irt_result object contains logits of tasks and subjects from the IRT0 model, along with error and rejected units.
+
+**Attributes:**
+- `abilities` (pandas.Series): Logits of subjects' abilities (subjects are the index of the Series).
+- `difficult` (pandas.Series): Logits of task difficulty (tasks are the index of the Series).
+- `err` (float): Metric of the difference between real test results and estimated results by logits.
+- `rejected_tasks` (list): Names of tasks that cannot be used to calculate difficulty logits.
+- `rejected_subjects` (list): Names of subjects that cannot be used to calculate ability logits.
 
 ```python
 # Abilites of test subjects
