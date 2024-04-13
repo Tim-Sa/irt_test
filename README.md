@@ -9,6 +9,11 @@ pip install irt-test
 ```
 
 ## Example Usage
+
+### ℹ️ Important
+
+**🔥 Note:** The Rasch model works only with binary data, also no column or row should contain a single value, for example, a row of zeros or ones will be excluded from the analysis.
+
 Input DataFrame example:
 |       |   Task 1 |   Task 2 |   Task 3 |   Task 4 |   Task 5 |
 |:------|---------:|---------:|---------:|---------:|---------:|
