@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "irt-test"
-version = "0.1.0"
+version = "0.1.2"
 description = "Package for calc difficult of test tasks and ability of test subjects by Rasch model (IRT 0)."
 authors = ["Tim-Sa <salnikovtimofeyof@gmail.com>"]
 readme = "README.md"
