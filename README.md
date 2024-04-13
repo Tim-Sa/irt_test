@@ -23,34 +23,20 @@ Input DataFrame example:
 | Natasha |        0 |        1 |        0 |        1 |        0 |        0 |        0 |        0 |        0 |         0 |         1 |
 | Jimmy   |        0 |        0 |        0 |        0 |        0 |        0 |        0 |        0 |        0 |         0 |         1 |
 
+
 For get logits of tasks and subjects use 'irt' function:
 
 ```python
-import pandas as pd
 from irt_test.irt import irt
-
-# Get pandas DataFrame with test results
-df = pd.read_excel('test.xlsx', index_col=0)
 
 # Get logits and additional info from IRT0 model
 irt_result = irt(df)
+```
 
+```python
 # Abilites of test subjects
 irt_result.abilities
-
-# Difficult of test tasks
-irt_result.difficult
-
-# "IRT model error
-irt_result.err
-
-# Can't get logits for these subjects
-irt_result.rejected_subjects
-
-# Can't get logits for these tasks
-irt_result.rejected_tasks
 ```
-##### irt_result.abilities (pd.Series)
 |         |         0 |
 |:--------|----------:|
 | Julia   |  4.72094  |
@@ -62,7 +48,10 @@ irt_result.rejected_tasks
 | Tony    | -0.451242 |
 | Dmitry  | -2.2367   |
 | Natasha | -3.0347   |
-##### irt_result.difficult (pd.Series)
+```python
+# Difficult of test tasks
+irt_result.difficult
+```
 |         |         0 |
 |:--------|----------:|
 | Task 1  | -2.84779  |
@@ -75,11 +64,20 @@ irt_result.rejected_tasks
 | Task 8  |  1.59305  |
 | Task 9  |  4.50918  |
 | Task 10 |  4.50918  |
-##### irt_result.err (float)
+```python
+# "IRT model error
+irt_result.err
+```
 0.0196
-##### irt_result.rejected_subjects (list[str])
+```python
+# Can't get logits for these subjects
+irt_result.rejected_subjects
+```
 ['Jimmy']
-##### irt_result.rejected_tasks (list[str])
+```python
+# Can't get logits for these subjects
+irt_result.rejected_subjects
+```
 ['Task 11']
 
 
