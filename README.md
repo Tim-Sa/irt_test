@@ -8,7 +8,7 @@ You can install irt_test using pip:
 pip install irt-test
 ```
 
-### Example Usage
+## Example Usage
 Input DataFrame example:
 |       |   Task 1 |   Task 2 |   Task 3 |   Task 4 |   Task 5 |
 |:------|---------:|---------:|---------:|---------:|---------:|
